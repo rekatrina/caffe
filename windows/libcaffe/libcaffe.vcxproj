@@ -42,6 +42,10 @@
     <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA $(CudaVersion).props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>G:\wzf\caffe-segnet\3rdparty\include\opencv;G:\wzf\caffe-segnet\3rdparty\include\opencv2;G:\wzf\caffe-segnet\3rdparty\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\wzf\caffe-segnet\3rdparty\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -67,6 +71,9 @@
     <Lib>
       <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
+    <CudaLink>
+      <AdditionalDependencies>opencv_world300.lib</AdditionalDependencies>
+    </CudaLink>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Link>
