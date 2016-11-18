@@ -34,6 +34,12 @@
     <Filter Include="cu\solvers">
       <UniqueIdentifier>{fcb8114c-3425-41da-b30a-af2cb33dd851}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\proto">
+      <UniqueIdentifier>{273dc9ff-4943-4058-a9db-b26c0abc368d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\proto">
+      <UniqueIdentifier>{028f38fa-c0a8-4fa3-a79d-4a03d1aeb0f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\caffe\util\im2col.cpp">
@@ -351,6 +357,9 @@
     <ClCompile Include="..\..\src\caffe\layers\tile_layer.cpp">
       <Filter>src\layers</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\caffe\proto\caffe.pb.cc">
+      <Filter>src\proto</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\caffe\util\benchmark.hpp">
@@ -658,6 +667,9 @@
     </ClInclude>
     <ClInclude Include="..\..\include\caffe\layers\upsample_layer.hpp">
       <Filter>include\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\caffe\proto\caffe.pb.h">
+      <Filter>include\proto</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
