@@ -5,6 +5,7 @@
 
 #include "caffe/layer.hpp"
 #include "caffe/layers/base_data_layer.hpp"
+#include "caffe/data_transformer.hpp"
 
 namespace caffe{
 
